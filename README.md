@@ -36,8 +36,8 @@ $ composer require kdaviesnz/pubchem
 ## Usage
 
 ``` php
-$info = new kdaviesnz\PubChem("carbon dioxide");
-print_r($info);
+$carbonDioxide = new kdaviesnz\PubChem(280);
+echo $carbonDioxide;
 
 ```
 
