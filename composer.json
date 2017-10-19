@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "kdaviesnz\\canonicalsmiles\\": "src"
+            "kdaviesnz\\pubchem\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "kdaviesnz\\canonicalsmiles\\": "tests"
+            "kdaviesnz\\pubchem\\": "tests"
         }
     },
     "scripts": {
