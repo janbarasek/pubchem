@@ -1,34 +1,32 @@
 <?php
 
-require_once("vendor/autoload.php");
-require_once("src/IPubChem.php");
-require_once("src/PubChem.php");
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '../src/IPubChem.php';
+require_once __DIR__ . '/../src/PubChem.php';
 
 
 class PubChemTest extends PHPUnit_Framework_TestCase
 {
+	public function setUp(): void
+	{
+	}
 
-    public function setUp()
-    {
 
-    }
+	public function tearDown(): void
+	{
+	}
 
-    public function tearDown()
-    {
 
-    }
+	public function testMinimumViableTest(): void
+	{
+		/** @noinspection PhpUndefinedMethodInspection */
+		$this->assertTrue(true, 'true didn\'t end up being false!');
+	}
 
-    public function testMinimumViableTest()
-    {
-        /** @noinspection PhpUndefinedMethodInspection */
-        $this->assertTrue(true, "true didn't end up being false!");
-    }
 
-    public function testFetch()
-    {
-        $pubchem = new \kdaviesnz\pubchem\PubChem(280);
-        echo $pubchem;
-
-    }
-
+	public function testFetch(): void
+	{
+		$pubChem = new \kdaviesnz\pubchem\PubChem(280);
+		echo $pubChem;
+	}
 }
